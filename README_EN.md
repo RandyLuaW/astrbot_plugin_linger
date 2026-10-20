@@ -1,6 +1,6 @@
 # Linger: schedule the next wake-up only after the current turn ends
 
-> AstrBot plugin · Self-paced continuation without colliding with its own run
+> AstrBot plugin · keep_playing records intent; on_agent_done schedules
 
 ## The problem
 
