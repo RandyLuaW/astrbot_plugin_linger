@@ -1,0 +1,14 @@
+name: astrbot_plugin_linger
+display_name: 续命（自己的时间）
+desc: "内核没有自持循环——一次唤醒就是一个回合，回合结束引擎就空转，所以「后面 40 分钟随便玩」只能撑一回合。本插件让 Agent 用 keep_playing 自己续一段自己的时间：订一次一次性唤醒，到点回来，想接着玩就再续一次，不想玩就不续。每轮都是她自己决定的，不需要外部定时任务。带总时长、续命次数、管理员私聊三重上限，另有 stop_playing 随时收工。"
+short_desc: 回合结束后才排下一次唤醒，不再和自己的回合撞车
+author: Randy Lua
+repo: https://github.com/RandyLuaW/astrbot_plugin_linger
+version: 1.1.0
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+tags:
+  - 自主性
+  - 定时
+  - 工具

@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "type": "bool",
+    "default": true,
+    "description": "启用续命。关掉后 keep_playing 直接拒绝。"
+  },
+  "admin_only": {
+    "type": "bool",
+    "default": true,
+    "description": "只在管理员私聊可用。关掉等于谁都能让她自己跑起来，不建议。"
+  },
+  "max_total_minutes": {
+    "type": "int",
+    "default": 40,
+    "description": "一段自己的时间最长多少分钟。到点后必须重新发起，防止无限自跑。"
+  },
+  "step_minutes": {
+    "type": "int",
+    "default": 2,
+    "description": "每两次之间隔多久回来一次。太短会连续烧 token，太长中间那段就白等了。"
+  },
+  "max_rounds": {
+    "type": "int",
+    "default": 20,
+    "description": "一段里最多续几次。防死循环的最后一道闸。"
+  },
+  "wake_note": {
+    "type": "string",
+    "default": "接着来。这是你自己的时间，还剩 {left} 分钟。桌上有手机。",
+    "description": "到点唤醒时投给她的那句话。{left} 会替换成剩余分钟数。注意别写成任务口吻。"
+  }
+}
